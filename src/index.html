@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+
+    <link rel="shortcut icon" href="img/profile.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/61b27e08e6.js"
+      crossorigin="anonymous"></script>
+
+    <script src="script.js" defer></script>
+
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+
+    <title>Josh Khovick Fermano</title>
+  </head>
+  <body class="font-poppins bg-white dark:bg-black scroll-smooth">
+    <!-- Navbar -->
+    <nav
+      class="p-5 fixed top-0 left-0 right-0 z-10 bg-white text-black dark:bg-black dark:text-white">
+      <div
+        class="container max-w-6xl mx-auto flex flex-col items-center space-y-6 border-b-2 border-gray md:flex-row md:items-center md:justify-between md:space-y-0">
+        <!-- Logo -->
+        <div
+          class="flex flex-col text-center md:text-left cursor-pointer hover:scale-95 duration-500">
+          <a href="#home">
+            <h1 class="text-lg font-bold md:text-2xl">Josh Khovick Fermano</h1>
+            <p class="text-lg opacity-85">Computer Science Student</p>
+          </a>
+        </div>
+
+        <!-- Links -->
+        <div class="flex md:flex-row items-center text-sm md:text-base">
+          <ul
+            class="flex flex-row text-center space-x-4 pb-2 md:flex-row md:space-x-4 md:space-y-0">
+            <li class="hover:scale-105 transition-all">
+              <a href="#about" class="hover:text-gray-400"> About</a>
+            </li>
+            <li class="hover:scale-105 transition-all">
+              <a href="#projects" class="hover:text-gray-400">Projects</a>
+            </li>
+            <li class="hover:scale-105 transition-all">
+              <a href="#experience" class="hover:text-gray-400">Experience</a>
+            </li>
+            <li class="hover:scale-105 transition-all">
+              <a href="#contact" class="hover:text-gray-400">Contact</a>
+            </li>
+
+            <div class="cursor-pointer">
+              <li class="hover:scale-105 transition-all">
+                <i
+                  id="toggle-moon"
+                  class="fa-solid fa-moon md:ml-10 md:block toggle-moon"></i>
+              </li>
+            </div>
+
+            <div class="cursor-pointer">
+              <li class="hover:scale-105 transition-all hidden">
+                <i
+                  id="toggle-sun"
+                  class="fa-solid fa-sun text-yellow-300 hover:text-yellow-500 md:ml-10 md:block toggle-sun"></i>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main
+      id="home"
+      class="bg-white h-screen dark:bg-black dark:text-white delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+      data-taos-offset="300">
+      <div
+        class="container p-6 max-w-xl md:max-w-6xl mx-auto mt-20 gap-8 h-full flex flex-col-reverse items-center justify-center space-y-4 md:space-y-0 md:gap-4 md:flex-row md:items-center md:justify-between">
+        <!-- Title -->
+        <div class="flex flex-col text-center max-w-lg md:text-left">
+          <h1
+            class="text-black font-poppins text-2xl font-bold mb-2 dark:text-white md:text-4xl">
+            Josh Khovick Fermano
+          </h1>
+          <h3 class="text-gray-500 text-lg font-poppins md:text-xl">
+            BS Computer Science | 3<sup class="z-0">rd</sup> Year
+          </h3>
+          <p class="text-sm mt-6 text-black dark:text-white md:text-base">
+            I am currently a 3rd year Computer Science student from the
+            <span class="font-bold"
+              >Technological University of the Philippines - Manila</span
+            >, under the department of College of Science.
+          </p>
+
+          <!-- Social Links -->
+          <div
+            class="text-black mt-10 flex justify-center md:justify-start dark:text-white">
+            <ul class="flex flex-row space-x-4 text-2xl">
+              <li class="hover:scale-105 transition-transform">
+                <a href="https://github.com/joshfermano" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li class="hover:scale-105 transition-transform">
+                <a
+                  href="https://www.linkedin.com/in/joshfermano/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="hover:scale-105 transition-transform">
+                <a
+                  href="https://www.instagram.com/joshfermano_/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Img/Profile Pic -->
+        <div class="cursor-pointer">
+          <img
+            class="h-[260px] rounded-full shadow-lg hover:shadow-gray-600 md:hover:shadow-lg md:hover:shadow-gray-600 duration-500 md:h-[400px] md:w-[400px] md:-mt-20"
+            src="img/profile.png"
+            alt="Profile Picture" />
+        </div>
+      </div>
+    </main>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="bg-white h-screen text-black dark:bg-black dark:text-white delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+      data-taos-offset="300">
+      <div class="container max-w-6xl mx-auto p-5">
+        <div
+          class="flex flex-col max-w-xl items-center space-y-4 md:max-w-4xl mx-auto">
+          <h1 class="text-4xl font-bold md:text-5xl">ABOUT</h1>
+          <p class="text-sm md:text-xl text-justify">
+            I am Josh Khovick Fermano, a 20-year-old student from the
+            <span class="font-bold"
+              >Technological University of the Philippines, Manila.</span
+            >
+            Currently a 3rd year student taking a Bachelor of Science in
+            Computer Science. I currently live in Imus City, Cavite. I am
+            specializing in
+            <span class="font-bold"
+              >Full-Stack Web Development with JavaScript.</span
+            >
+          </p>
+          <p class="text-sm md:text-xl text-justify">
+            I graduated senior high school at the University of Perpetual Help
+            System Dalta-Molino Campus under the strand of science, technology,
+            engineering, and mathematics. I enjoy building tech stuff and
+            programming projects as a form of hobby. I play
+            <span class="font-bold">basketball</span> competitively and am also
+            a fan of combat sports such as
+            <span class="font-bold">MMA, Boxing, etc.</span>
+          </p>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="flex flex-col space-y-4 mt-10 items-center">
+          <h1 class="font-bold text-4xl">Technologies</h1>
+          <!-- Flex -->
+          <div
+            class="max-w-xl flex flex-row flex-wrap md:grid md:grid-cols-5 md:gap-4">
+            <div class="cursor-pointer p-2">
+              <img
+                class="h-[60px] hover:scale-110 duration-500 md:h-[80px] md:hover:scale-110"
+                src="img/html.svg"
+                alt="HTML Logo" />
+            </div>
+
+            <div class="cursor-pointer p-2">
+              <img
+                class="h-[60px] hover:scale-110 duration-500 md:h-[80px] md:hover:scale-110"
+                src="img/css.svg"
+                alt="CSS Logo" />
+            </div>
+
+            <div class="cursor-pointer p-2">
+              <img
+                class="h-[60px] hover:scale-110 duration-500 md:h-[80px] md:hover:scale-110"
+                src="img/booststrap.svg"
+                alt="Bootstrap Logo" />
+            </div>
+
+            <div class="cursor-pointer p-2">
+              <img
+                class="h-[60px] hover:scale-110 duration-500 md:h-[80px] md:hover:scale-110"
+                src="img/tailwind.svg"
+                alt="Tailwind Logo" />
+            </div>
+
+            <div class="cursor-pointer p-2">
+              <img
+                class="h-[60px] hover:scale-110 duration-500 md:h-[80px] md:hover:scale-110"
+                src="img/javascript.svg"
+                alt="JavaScript Logo" />
+            </div>
+
+            <div class="cursor-pointer p-2">
+              <img
+                class="h-[60px] hover:scale-110 duration-500 md:h-[80px] md:hover:scale-110"
+                src="img/react.svg"
+                alt="React Logo" />
+            </div>
+
+            <div class="cursor-pointer p-2">
+              <img
+                class="h-[60px] hover:scale-110 duration-500 md:h-[80px] md:hover:scale-110"
+                src="img/node js.svg"
+                alt="Node Js Logo" />
+            </div>
+
+            <div class="cursor-pointer p-2">
+              <img
+                class="h-[60px] hover:scale-110 duration-500 md:h-[80px] md:hover:scale-110"
+                src="img/mysql.svg"
+                alt="MySql Logo" />
+            </div>
+
+            <div class="cursor-pointer p-2">
+              <img
+                class="h-[60px] hover:scale-110 duration-500 md:h-[80px] md:hover:scale-110]"
+                src="img/python.svg"
+                alt="Python Logo" />
+            </div>
+
+            <div class="cursor-pointer p-2">
+              <img
+                class="h-[60px] hover:scale-110 duration-500 md:h-[80px] md:hover:scale-110"
+                src="img/c++.svg"
+                alt="C++ Logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="bg-white h-screen text-black dark:bg-black dark:text-white delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+      data-taos-offset="300">
+      <div class="container max-w-lg mx-auto space-y-4 md:max-w-6xl">
+        <div class="flex flex-col mx-auto items-center gap-6">
+          <h1 class="text-4xl font-bold md:text-5xl">PROJECTS</h1>
+          <p class="text-xl">Some of the Projects I have made</p>
+        </div>
+        <!-- Images -->
+        <div
+          class="images flex flex-col space-y-6 md:flex-row md:flex-wrap md:space-y-0 md:gap-4">
+          <div
+            class="bg-gray-300 md:h-[200px] md:w-[500px] flex flex-col md:flex-row md:items-center mx-auto p-4 rounded-lg gap-5 dark:bg-white dark:text-black">
+            <div>
+              <img
+                class="h-[150px] w-[250px] cursor-pointer hover:scale-110 duration-500 hover:rounded-lg"
+                src="img/spacex.png"
+                alt="" />
+            </div>
+
+            <div class="space-y-5">
+              <h1 class="text-xl font-bold">Space X Website Clone</h1>
+              <p class="text-sm">HTML, CSS, JAVASCRIPT</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-300 md:h-[200px] md:w-[500px] flex flex-col md:flex-row md:items-center mx-auto p-4 rounded-lg gap-5 dark:bg-white dark:text-black">
+            <div>
+              <img
+                class="h-[150px] w-[250px] cursor-pointer hover:scale-110 duration-500 hover:rounded-lg"
+                src="img/growth.png"
+                alt="" />
+            </div>
+
+            <div class="space-y-5">
+              <h1 class="text-xl font-bold">Growth Website</h1>
+              <p class="text-sm">HTML, CSS, JAVASCRIPT</p>
+            </div>
+          </div>
+
+          <div
+            class="hidden md:flex bg-gray-300 md:h-[200px] md:w-[500px] flex-col md:flex-row md:items-center mx-auto p-4 rounded-lg gap-5 dark:bg-white dark:text-black">
+            <div>
+              <img
+                class="h-[150px] w-[250px] cursor-pointer hover:scale-110 duration-500 hover:rounded-lg"
+                src="img/agency.png"
+                alt="" />
+            </div>
+
+            <div class="space-y-5">
+              <h1 class="text-xl font-bold">Creative Agency Website</h1>
+              <p class="text-sm">HTML, CSS, JAVASCRIPT</p>
+            </div>
+          </div>
+
+          <div
+            class="hidden md:flex bg-gray-300 md:h-[200px] md:w-[500px] flex-col md:flex-row md:items-center mx-auto p-4 rounded-lg gap-5 dark:bg-white dark:text-black">
+            <div>
+              <img
+                class="h-[150px] w-[250px] cursor-pointer hover:scale-110 duration-500 hover:rounded-lg"
+                src="img/booklist.png"
+                alt="" />
+            </div>
+
+            <div class="space-y-5">
+              <h1 class="text-xl font-bold">Booklist App</h1>
+              <p class="text-sm">HTML, BOOSTSTRAP CSS, JAVASCRIPT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section
+      id="experience"
+      class="bg-white h-screen text-black dark:bg-black dark:text-white delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+      data-taos-offset="300">
+      <div class="container max-w-6xl mx-auto">
+        <div class="flex flex-col items-center text-center space-y-4 mb-10">
+          <h2 class="text-4xl font-bold md:text-5xl">Experience</h2>
+          <p class="text-xl">My Work Experience</p>
+        </div>
+
+        <!-- Experience -->
+        <div class="flex flex-col items-center space-y-6">
+          <div
+            class="relative flex flex-col bg-gray-300 dark:bg-white h-[200px] w-[350px] dark:text-black md:h-[250px] md:w-[460px] p-4 rounded-lg space-y-4 cursor-pointer hover:scale-105 duration-500">
+            <h1 class="absolute opacity-70 right-0 text-4xl font-bold">2024</h1>
+            <div>
+              <h1 class="text-xl font-bold md:text-2xl">Mandaluyong LGU</h1>
+              <p class="text-lg text-gray-500">Web Designer</p>
+            </div>
+
+            <p class="text-sm text-justify md:text-lg">
+              Successfully designed and developed responsive websites for City
+              Planning Department. Designing website mockups, creating
+              user-friendly UI, and developing intuitive layouts.
+            </p>
+          </div>
+
+          <div
+            class="relative flex flex-col bg-gray-300 dark:bg-white h-[200px] w-[350px] dark:text-black md:h-[250px] md:w-[460px] p-4 rounded-lg space-y-4 cursor-pointer hover:scale-105 duration-500">
+            <h1 class="absolute opacity-70 right-0 text-4xl font-bold">2023</h1>
+            <div>
+              <h1 class="text-lg font-bold md:text-2xl">
+                Stellite Commercial, INC.
+              </h1>
+              <p class="text-lg text-gray-500">Graphic Designer</p>
+            </div>
+
+            <p class="text-sm md:text-lg text-justify">
+              Creating designs for banners and posters used for marketing and
+              advertisement. Utilizing creativity design tools such as Canva,
+              Figma, etc.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="bg-white h-screen text-black dark:bg-black dark:text-white delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+      data-taos-offset="300">
+      <div
+        class="container flex flex-col items-center max-w-lg md:max-w-6xl mx-auto">
+        <div class="flex flex-col items-center space-y-2 mb-10">
+          <h2 class="text-2xl md:text-5xl font-bold">Contact</h2>
+          <p class="text-xl md:text-2xl">Let's Talk!</p>
+        </div>
+        <!-- Details -->
+        <div
+          class="flex flex-row items-center justify-between p-4 space-x-4 md:space-x-10 mb-40">
+          <div class="flex flex-row items-center justify-center gap-4 md:gap-8">
+            <i class="fa-solid fa-map-pin text-xl"></i>
+            <div>
+              <h1 class="text-lg font-bold md:text-5xl">Address</h1>
+              <p class="text-base md:text-2xl">Imus City, Cavite, 4103</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row items-center gap-4 md:gap-8">
+            <i class="fa-solid fa-phone text-xl"></i>
+            <div>
+              <h1 class="text-lg font-bold md:text-5xl">Contact</h1>
+              <p class="text-base md:text-2xl">+63 9499456005</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            or you can
+            <span class="font-bold"
+              ><a href="mailto:fermanojoshkhovick@gmail.com">email</a>
+            </span>
+            me directly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-white text-black dark:bg-black dark:text-white">
+      <div
+        class="container max-w-6xl mx-auto flex flex-col items-center justify-center space-y-4">
+        <p class="text-sm">Josh Khovick Fermano &copy; 2024</p>
+
+        <div
+          class="text-black mt-10 flex justify-center md:justify-start dark:text-white">
+          <ul class="flex flex-row space-x-4 text-2xl">
+            <li class="hover:scale-105 transition-transform">
+              <a href="https://github.com/joshfermano" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li class="hover:scale-105 transition-transform">
+              <a href="https://www.linkedin.com/in/joshfermano/" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li class="hover:scale-105 transition-transform">
+              <a href="https://www.instagram.com/joshfermano_/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+  </body>
+</html>
