@@ -387,34 +387,35 @@
     <!-- Contact Section -->
     <section
       id="contact"
-      class="p-5 bg-white h-[500px] text-black dark:bg-black dark:text-white delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+      class="p-5 bg-white h-screen text-black dark:bg-black dark:text-white delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
       data-taos-offset="300">
       <div
         class="container flex flex-col items-center max-w-lg md:max-w-6xl mx-auto">
-        <div class="flex flex-col items-center space-y-2 mb-10">
+        <div class="flex flex-col items-center space-y-2 mb-10 md:mb-4">
           <h2 class="text-2xl md:text-5xl font-bold">Contact</h2>
           <p class="text-xl md:text-2xl">Let's Talk!</p>
         </div>
         <!-- Details -->
         <div
-          class="flex flex-row items-center justify-between p-4 space-x-4 md:space-x-10 mb-10">
+          class="flex flex-row items-center justify-between p-4 space-x-4 md:space-x-10 mb-6 md:mb-2">
           <div class="flex flex-row items-center justify-center gap-4 md:gap-8">
             <i class="fa-solid fa-map-pin text-xl"></i>
             <div>
-              <h1 class="text-lg font-bold md:text-5xl">Address</h1>
-              <p class="text-base md:text-2xl">Imus City, Cavite, 4103</p>
+              <h1 class="text-lg font-bold md:text-4xl">Address</h1>
+              <p class="text-base md:text-xl">Imus City, Cavite, 4103</p>
             </div>
           </div>
 
           <div class="flex flex-row items-center gap-4 md:gap-8">
             <i class="fa-solid fa-phone text-xl"></i>
             <div>
-              <h1 class="text-lg font-bold md:text-5xl">Contact</h1>
-              <p class="text-base md:text-2xl">+63 9499456005</p>
+              <h1 class="text-lg font-bold md:text-4xl">Contact</h1>
+              <p class="text-base md:text-xl">+63 9499456005</p>
             </div>
           </div>
         </div>
-        <div>
+
+        <div class="md:mb-0">
           <p>
             or you can
             <span class="font-bold"
@@ -422,6 +423,58 @@
             </span>
             me directly.
           </p>
+        </div>
+
+        <!-- Form -->
+        <div
+          class="container flex p-4 space-y-4 flex-col md:w-[400px] rounded-lg bg-gray-300 text-black dark:bg-white dark:text-black">
+          <div class="flex flex-col">
+            <label class="font-bold" for="name">Name</label>
+            <input
+              class="w-full p-2 rounded-lg focus:outline-none dark:bg-gray-300"
+              type="text"
+              placeholder="Josh Khovick Fermano" />
+          </div>
+
+          <div class="flex flex-col">
+            <label class="font-bold" for="gender">Gender</label>
+            <div>
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male">Male</label>
+
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female">Female</label>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <label class="font-bold" for="email">Email</label>
+            <input
+              class="w-full p-2 rounded-lg focus:outline-none dark:bg-gray-300"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="firstname.surname@tup.edu.ph" />
+          </div>
+
+          <div class="flex flex-col">
+            <label class="font-bold" for="comment">Comment</label>
+            <textarea
+              class="dark:bg-gray-300 focus:outline-none rounded-lg"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="2"
+              placeholder="Type your message here"></textarea>
+          </div>
+
+          <div class="flex justify-center">
+            <button
+              class="border-2 border-black px-4 py-2 mt-2 rounded-lg hover:bg-black hover:text-white hover:scale-95 transition-all duration-500"
+              type="submit">
+              Submit
+            </button>
+          </div>
         </div>
       </div>
     </section>
